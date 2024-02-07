@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Sign in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign up</button>
+            </div>
+            <!-- <div class="social-icons">
+                <img src="" alt="a">
+                <img src="" alt="a">
+                <img src="" alt="a">
+            </div> -->
+            <!-- login -->
+            <form id="login" class="inpt-group">
+                <input type="text" placeholder="User id" class="input-field" required>
+                <input type="password" placeholder="password" class="input-field" required>
+                <input type="checkbox"  class="cbox"><span>Remember me</span>
+                <button type="submit" class="sub-btn">Sign in</button>
+            </form>
+            <!-- registration form -->
+            <form id="register" class="inpt-group">
+                <label for="Email">
+                <input type="email" placeholder="Email id" class="input-field" required></label>
+                <label for="User_id">
+                <input type="text" placeholder="User id" class="input-field" required></label>
+                <label for="password"></label>
+                <input type="password" placeholder="password" class="input-field" required></label>
+                <input type="password" placeholder="confirm password" class="input-field" required></label>
+                <input type="checkbox"  class="cbox"> <span>I Agree to the Terms and Conditions</span> 
+                <button type="submit" class="sub-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var log = document.getElementById('login')
+        var reg = document.getElementById('register')
+        var bt = document.getElementById('btn')
+
+        function register(){
+            log.style.left = "-400px"
+            reg.style.left = "50px"
+            bt.style.left = "110px"
+        }
+        function login(){
+            log.style.left = "50px"
+            reg.style.left = "450px"
+            bt.style.left = "0px"
+        }
+    </script>
+</body>
+</html>
+                                <!-- NAVIGATION VAR -->
+<!-- <div>
+    <a href="/index.html"></a>
+</div> -->
+<!-- <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#"></a>Contact</li>
+        <li><button class="logi-btn" onclick="document.getElementById('log-form').style.display='block'"style="width:auto;">login</button></li>
+    </ul>
+</nav> -->
